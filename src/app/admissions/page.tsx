@@ -1,1 +1,11 @@
-  export default function Page(){ return <div className='p-10'><h1 className='font-black text-3xl text-[#0B3D91]'>ADMISSIONS - Next.js Module</h1><p className='mt-4 text-sm'>E:\Projects\sschool-premium\src\app\admissions\page.tsx � Database Ready � Prisma Model: admissions</p><a href='/' className='text-[#0B3D91] font-bold underline'>? Home</a></div> }
+﻿export default function AdmissionsPage() {
+  return (
+    <div className="min-h-screen p-10 bg-gray-50">
+      <div className="max-w-4xl mx-auto bg-white rounded-xl shadow p-8">
+        <h1 className="text-3xl font-bold">Admissions</h1>
+        <p className="mt-4 text-gray-600">SSchool Premium Admissions Module - Coming Soon</p>
+        <a href="/" className="mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded">Back to Home</a>
+      </div>
+    </div>
+  );
+}
