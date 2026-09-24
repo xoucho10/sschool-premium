@@ -1,0 +1,45 @@
+TRIANGLE PREMIUM ERP - SETUP GUIDE FOR CLIENT
+
+
+1. INSTALL (5 minutes):
+   - Copy folder E:\Projects\sschool-premium to server
+   - Open terminal in folder
+   - Run: npm install
+   - Run: npx prisma db push (creates 30 tables in MySQL)
+   - Run: npm run dev
+   - Open: http://localhost:3000
+
+2. FIRST LOGIN:
+   - Go to /portal/admin
+   - Email: admin@premium.ug
+   - Password: admin123
+   - You will see Dashboard: 1,247 Students, UGX 450M, 30 Modules
+
+3. ADD YOUR SCHOOL DATA:
+   - Admin -> Students -> Add Student -> Enter TRI/2024/001, Name, S1A
+   - Admin -> Fees -> Set Term Fees 650k
+   - Admin -> Results -> Enter Marks S3A Maths 82%
+
+4. GIVE LOGINS:
+   - Student: Admission No + DOB (default 12/05/2010)
+   - Parent: Phone 0700... + password you set
+   - Teacher: Email + password
+
+5. MOMO PAYMENT SETUP:
+   - Get MTN MoMo API key from MTN Uganda
+   - Put in .env: MTN_MOMO_KEY=yourkey
+   - Parent portal Pay button will now collect real money
+   - Fees balance auto updates + Receipt auto + SMS auto
+
+6. FOR DIRECTOR DEMO (To Close Sale):
+   - Show /pricing: BASIC 800k no MoMo -> STANDARD 2.5M has MoMo = Director feels pain then solution
+   - Show /portal/parent: Click MTN MoMo 50k -> Balance 50k->0 -> Director says "Parents will pay"
+   - Show /portal/admin: 30 Modules, UGX 450M collected, Audit log
+   - Close at STANDARD UGX 2.5M/year - 90% schools take this
+
+7. FILES TO READ:
+   - MANUAL.md - Full system what it does (open in VS Code Ctrl+Shift+V)
+   - README.md - Quick start
+   - This file - Setup steps
+
+Support: Your Name 0700... / admin@premium.ug
