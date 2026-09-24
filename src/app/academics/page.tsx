@@ -1,1 +1,8 @@
-  export default function Page(){ return <div className='p-10'><h1 className='font-black text-3xl text-[#0B3D91]'>ACADEMICS - Next.js Module</h1><p className='mt-4 text-sm'>E:\Projects\sschool-premium\src\app\academics\page.tsx � Database Ready � Prisma Model: academics</p><a href='/' className='text-[#0B3D91] font-bold underline'>? Home</a></div> }
+﻿export default function AcademicsPage() {
+  return (
+    <div className="p-10">
+      <h1 className="text-3xl font-bold">Academics</h1>
+      <p className="mt-4">Academics module - SSchool Premium</p>
+    </div>
+  );
+}
