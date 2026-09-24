@@ -1,1 +1,8 @@
-  export default function Page(){ return <div className='p-10'><h1 className='font-black text-3xl text-[#0B3D91]'>ABOUT - Next.js Module</h1><p className='mt-4 text-sm'>E:\Projects\sschool-premium\src\app\about\page.tsx � Database Ready � Prisma Model: about</p><a href='/' className='text-[#0B3D91] font-bold underline'>? Home</a></div> }
+﻿export default function AboutPage() {
+  return (
+    <div className="p-10">
+      <h1 className="text-3xl font-bold">About SSchool Premium</h1>
+      <p className="mt-4">School management system.</p>
+    </div>
+  );
+}
